@@ -4,8 +4,10 @@ const cors = require('cors');
 
 const app = express();
 
-// Middleware
-app.use(cors());
+// Enable CORS
+app.use(cors({
+    origin: 'https://edu-track-kappa.vercel.app/'
+}));
 app.use(express.json());
 
 // Routes
