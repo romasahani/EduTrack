@@ -8,9 +8,9 @@ const app = express();
 
 app.use(cors({
     origin: 'https://edu-track-kappa.vercel.app/', // replace with your actual Vercel URL
-    methods: ['GET','POST','PUT','DELETE'],
+    //methods: ['GET','POST','PUT','DELETE'],
   }));
-//app.use(cors());
+app.use(cors());
 app.use(express.json());
 
 // Routes
