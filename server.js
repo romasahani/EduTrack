@@ -9,7 +9,7 @@ const app = express();
 app.use(cors({
     origin: 'https://your-frontend.vercel.app', // replace with your actual Vercel URL
     methods: ['GET','POST','PUT','DELETE'],    
-    credentials: true
+    //credentials: true
 }));
 //app.use(cors());
 app.use(express.json());
