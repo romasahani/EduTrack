@@ -1,7 +1,9 @@
-const API_STUDENTS  = "http://localhost:5000/students";
-const API_TEACHERS  = "http://localhost:5000/teachers";
-const API_CLASSES   = "http://localhost:5000/classes";
-const API_ATTENDANCE= "http://localhost:5000/attendance";
+// config.js
+const BASE_URL = "https://edutrack-w7uz.onrender.com";
+const API_STUDENTS   = `${BASE_URL}/students`;
+const API_TEACHERS   = `${BASE_URL}/teachers`;
+const API_CLASSES    = `${BASE_URL}/classes`;
+const API_ATTENDANCE = `${BASE_URL}/attendance`;
 
 let allStudents = [], allTeachers = [], allClasses = [], allAttendance = [];
 
