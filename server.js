@@ -5,8 +5,11 @@ const cors = require('cors');
 const app = express();
 
 // Enable CORS
+
 app.use(cors({
-    origin: 'https://edu-track-kappa.vercel.app/'
+    origin: 'https://your-frontend.vercel.app', // replace with your actual Vercel URL
+    methods: ['GET','POST','PUT','DELETE'],    
+    credentials: true
 }));
 //app.use(cors());
 app.use(express.json());
