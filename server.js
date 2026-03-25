@@ -8,7 +8,7 @@ const app = express();
 app.use(cors({
     origin: 'https://edu-track-kappa.vercel.app/'
 }));
-app.use(cors());
+//app.use(cors());
 app.use(express.json());
 
 // Routes
